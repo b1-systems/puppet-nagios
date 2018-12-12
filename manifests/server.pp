@@ -76,7 +76,7 @@ class nagios::server (
   $enable_notifications  = '1',
   # private/resource.cfg for $USERx$ macros (from 1 to 32)
   $user = {
-    '1' => $::nagios::params::plugin_dir,
+    '1' => $plugin_dir,
   },
   # Command and options for all nrpe-based checks
   $nrpe_command   = $::nagios::params::nrpe_command,
